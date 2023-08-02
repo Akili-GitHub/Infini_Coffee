@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Infini Coffee</title>
+</head>
+
+<body>
+
+<head> 
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    
+<!-- Buid:CSS CSS/MAIN>CSS---------->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <title>Infini Coffee</title>
+    <!-----------------End Build------------------------>
+</head>
+<body >
+    <header>
+  <!------------------TOP NAVBAR SHRINK TO THE LEFT--------------- -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" >
+
+  <button class="navbar-toggler" 
+  type="button" 
+  data-toggle="collapse" 
+  data-target="#infiniNavbar" 
+  aria-controls="infiniNavbar" 
+  aria-expanded="false"
+  aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="infiniNavbar">
+    <a class="navbar-brand" href="#">
+      <img src="img\images.jpg" width="90" height="90" alt="">
+    </a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+ <li class="nav-item ">
+    <a class="nav-link " href="index.html">Home</a>
+  </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="coffee.html">Coffee</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="tea.html">Tea</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="pastries.html">Patisserie</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="order.html">Order</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="subscriptions.html">Subscriptions</a>
+  </li>
+ <li class="nav-item">
+    <a class="nav-link" href="merchandises.html">Marchandises</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle active" href="learn.html" id="infiniNavbarDropDown" 
+       data-toggle="dropdown"
+       aria-haspopup="true"
+       aria-expanded="false">Learn</a>
+       <div class="dropdown-menu" aria-labelledby="infiniNavbarDropDown">
+          <a class="dropdown-item" href="learn.html">About US</a>
+          <a class="dropdown-item" href="contactus.html">Contact</a>
+      
+        </div>
+  </li>
+</ul>
+    <!---===============Adding  ======---->
+        <span class="navbar-text ml-auto ">
+            <a id="loginButton" 
+            role="button" >
+            <i class="fa fa-sign-in text-white"></i> Login
+</a>
+
+        
+        </span> 
+  </div>
+</nav>
+<!------------------Here the code of the Modal that will call the Modal. The code can be anywhere in the BODY----------------------->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header " text-white" >
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid ">
+                        <form >
+                            <div class="from-row">
+                                <div class="form-group col-12">
+                                        <label class="sr-only" for="loginEmail"> Email address</label>
+                                        <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                        <label class="sr-only" for="loginPassword">Password</label>
+                                        <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Remember me</label>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="from-row" >
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-dark btn-sm ml-auto" >Sign in</button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-------------------------------------The end of Code Modal ------------------------------------------------>
+  <!-------------------------END-TOP NAVBAR--------------- -->
+
+  <!-- Background image -->
+  <div class="p-5 text-center bg-image" style="
+      background-image: url('img/Abstract-Gold-Lines.jpg');
+      height: 500px; 
+    ">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <br/>
+             <br/>
+          <h1 class="mb-3">INFINI COFFEE</h1>
+          <h4 class="mb-3">One Cup of Coffee at the Time!</h4>
+         <img src="img\infiniLatteLogo.jpg" class="rounded-circle" alt=""  width="200" height="200"> 
+        </div>
+        </div>
+      </div>
+    </div>
+  
+  <!-- Background image -->
+  
+</header>
+   
+
+<!-- START THE FEATURETTES -->
+
+ <br/>
+    <div class="row featurette">
+      <div class="col-md-7 text-center d-flex flex-column align-items-center ">
+        <h2 class="featurette-heading">From farm to cup.<span class="text-muted">We love our famers.</span></h2>
+        <p class="lead "><p class="text-left">Welcome to Infini Coffee, a place where every aspect of our coffee journey is infused with passion and purpose.
+          From farm to cup, we take great pride in sourcing the finest coffee beans from sustainable farms around the world. Our commitment to ethical practices means we prioritize fair trade relationships with farmers, ensuring they receive just compensation for their exceptional produce.
+          These carefully selected beans then undergo an artisanal roasting process in our state-of-the-art facility, where we strive to bring out the distinct flavors and aromas that make each cup an unforgettable experience.
+        </p>
+      </div>
+      <div class="col-md-5 ">
+        <a href="learn.html"><img src="img\about2.jpg" class="img-fluid" 
+          width="1000" height="500"> </a>
+
+      </div> 
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2 text-center d-flex flex-column align-items-center">
+        <h2 class="featurette-heading">Our way of roasting. <span class="text-muted">Our philosophy!</span></h2>
+        <p class="lead"><p>
+Our roasting philosophy revolves around the artistry of coffee-making.
+ With precision and expertise, our dedicated team of roasters delicately craft each batch, creating a symphony of taste and richness.
+  We believe that coffee is more than just a beverage; it's a sensory journey that engages the palate and the soul.
+ By mastering the roasting process, we transform raw beans into a tantalizing sensory experience that celebrates the uniqueness of each origin.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1 ">
+        <a href="learn.html"></a> <img src="img\roasting.jpeg" class="img-fluid"
+           width="1000" height="500"> </a>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+       <div class="row featurette">
+      <div class="col-md-7 text-center d-flex flex-column align-items-center ">
+        <h2 class="featurette-heading">Our Loving Community.<span class="text-muted"> The Coffeers!</span></h2>
+        <p class="lead "><p >Beyond crafting exceptional coffee, Infini Coffee is a community-driven space.
+           We aspire to be more than just a coffee shop; we aim to create a warm and inviting atmosphere where people can connect, create, and share moments together.
+            From casual conversations over a latte to hosting events that celebrate local talent, our coffee shop thrives on the strength of the community that surrounds it. 
+        Whether you're seeking a quiet corner to work, a place to meet friends, or a hub for inspiration, Infini Coffee welcomes you to join our ever-growing family. Together, 
+        let's embark on a boundless journey of flavors, craftsmanship, and togetherness.
+      </div>
+      <div class="col-md-5  ">
+       <a href="learn.html"></a> <img src="\img\community1.png" class="img-fluid" width="1000" height="500"> </a>
+
+      </div>
+    </div>
+<p class="lead ">
+   <!-----------------------------------Footer----------------------------------------------------------------->
+    <footer class="bg-dark">
+   
+        <div class="container ">
+            <div class="row ">
+                <div class="col-4 col-sm-2 offset-1 ">
+            <h5>Links</h5>
+            <ul class="list-unstyled ">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="coffee.html">Coffee</a></li>
+                <li><a href="tea.html">Tea</a></li> 
+                <li><a href="pastries.html">Patisserie</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="subscriptions.html">Subscriptions</a></li>
+                <li><a href="merchandises.html">Merchandises</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                
+            </ul>
+        </div>
+        <div class="col-6 col-sm-5 text-center">
+            <h5>Social</h5>
+            <!-------------------- add btn-social-icon-->
+            <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube text-white"></i></a>
+            </div>
+            <div class="col-sm-4 text-center">
+                <a role="button" class="btn btn-link text-white" href="Tel:=+1-206-555-1234"><i class="fa fa-phone text-white"></i> 1-206-555-1234</a><br />
+                <a role="button" class="btn btn-link text-white" href="mailto:infinicofee.com"><i class="fa fa-envelope-o "></i> infinicoffee.com </a>
+            </div>
+        </div>
+        
+            </div>
+        </div>
+    </div>
+</div>
+
+    </footer>
+<!-- BUILD:JS  JS/MAIN.JS-->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<!---------------END BUILD------------------>
+<script>
+    
+    
+</script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+header h2 {
+  color: #CEC8FF;
+  text-align: center; }
+
+header #infiniNavbar {
+  color: #212529; }
+
+/*body {
+  background: url(https://www.shutterstock.com/image-illustration/coffee-color-brown-background-260nw-521587573.jpg) center top/cover;
+}*/
+und-footer {
+  background-image: linear-gradient(#CEC8FF, white);
+  padding: 20px 0; }
+
+h5 {
+  color: white; }
+
+.list-unstyled li a {
+  color: white; }
+
+i {
+  color: white; }
+.btn{
+    color:white
+}
+p {
+  text-align: justify ;
+  
+}
+.container p {
+  text-align: center;
+
+  }
+.lead p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.modal-header {
+background-color:rgb(209, 180, 150);
+color:white
+    
+}
+.form-group  button{
+ background-color: #212529;
+}
+body {
+background-color:rgb(247, 239, 233);
+} 
+
+ .selector bg-secondary {
+  background-color: rgb(114, 83, 36) ;
+}

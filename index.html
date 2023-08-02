@@ -1,11 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>Infini Coffee</title>
+    <!-- Required meta tags always come first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/carousel/">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- End Build -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans">
+    <title>Infini Coffee</title>
 </head>
 <body>
-    <h1> Welcome to Sacramento !</h1>
+    <header>
+        <!-- Top Navbar Shrink to the Left -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#infiniNavbar"
+                aria-controls="infiniNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="infiniNavbar">
+                <a class="navbar-brand" href="#">
+                    <img src="img\images.jpg" width="90" height="90" alt="">
+                </a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coffee.html">Coffee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tea.html">Tea</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pastries.html">Patisserie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="subscriptions.html">Subscriptions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="merchandises.html">Marchandises</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="learn.html" id="infiniNavbarDropDown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Learn</a>
+                        <div class="dropdown-menu" aria-labelledby="infiniNavbarDropDown">
+                            <a class="dropdown-item" href="learn.html">About US</a>
+                            <a class="dropdown-item" href="contactus.html">Contact</a>
+                        </div>
+                    </li>
+                </ul>
+                <span class="navbar-text ml-auto">
+                    <a id="loginButton" role="button">
+                        <i class="fa fa-sign-in text-white"></i> Login
+                    </a>
+                </span>
+            </div>
+        </nav>
+        <!-- Modal that will call the Modal (can be anywhere in the BODY) -->
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-white">
+                        <h3 class="modal-title">Login</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="from-row">
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="loginEmail">Email address</label>
+                                        <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                            placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="loginPassword">Password</label>
+                                        <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label">Remember me</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="from-row">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-dark btn-sm ml-auto">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <!-- Background image -->
+        <div class="p-5 text-center bg-image"
+            style="background-image: url('img/Abstract-Gold-Lines.jpg'); height: 500px;">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white">
+                        <br />
+                        <br />
+                        <h1 class="mb-3">INFINI COFFEE</h1>
+                        <h4 class="mb-3">One Cup of Coffee at the Time!</h4>
+                        <img src="img\infiniLatteLogo.jpg" class="rounded-circle" alt="" width="200"
+                            height="200">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Background image -->
+    </header>
+
+    <!--MAIN PAGE -->
+    <!-- Main Div the container that wraps 2 div rows  -->
+    <div class="container marketing">
+        <div class="row">   <!---div row 1-->
+            <div class="col-lg-4 text-center d-flex flex-column align-items-center">
+                <h2>Coffee</h2>
+                <a href="coffee.html"><img class="d-flex mr-3 rounded-circle" src="img\coffee-beans.jpg" alt=""
+                        width="250" height="250"></a>
+                <p class="text-left center" style="color: brown">Discover the epitome of our coffee perfection.
+                    Meticulously crafted coffee blends deliver an exquisite balance of rich flavors and captivating
+                    aromas. Savor every sip as our expertly roasted beans ignite your senses, leaving you craving more
+                    of this bold and invigorating experience.</p>
+                <p><a href="coffee.html" class="btn btn-secondary rounded-circle bg-dark"
+                        href="#">View details &raquo;</a></p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4 text-center d-flex flex-column align-items-center">
+                <h2>Tea</h2>
+                <a href="tea.html"><img class="d-flex mr-3 rounded-circle" src="img\green tea.jpg" alt=""
+                        width="250" height="250"></a>
+                <p class="text-left center" style="color: green">Each cup is a symphony of carefully selected tea
+                    leaves. Embrace the soothing embrace of our handpicked blends, as they caress your palate with a
+                    harmonious fusion of flavors and leave you with a sense of tranquility that lingers long after the
+                    last drop.</p>
+                <p><a href="tea.html" class="btn btn-secondary rounded-circle bg-dark"
+                        href="#">View details &raquo;</a></p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4 text-center d-flex flex-column align-items-center">
+                <h2>Patisseries</h2>
+                <a href="pastries.html"><img class="d-flex mr-3 rounded-circle" src="img\pastries.jpg" alt=""
+                        width="250" height="250"></a>
+                <p class="text-left center">Our pastries are a delectable symphony of indulgence, crafted with passion
+                    and precision. Each bite unveils a medley of delightful textures and flavors, perfectly
+                    complementing our beverages for a truly unforgettable experience.</p>
+                <p class="lead">
+                <p><a href="pastries.html" class="btn btn-secondary rounded-circle bg-dark"
+                        href="#">View details &raquo;</a></p>
+            </div>
+            <!-- /.col-lg-4 -->
+        </div>
+        <!---End div 1 row-->
+        <hr class="featurette-divider">
+        <div class="row featurette">   <!---div row 2-->
+            <div class="col-md-7 text-center d-flex flex-column align-items-center">
+                <h2 class="featurette-heading">Our Merchandises.<span class="text-muted">We'll blow your mind.</span>
+                </h2>
+                <p class="lead"><p>Elevate your coffee and tea experiences with Infini Coffee's exclusive
+                    merchandises, featuring stylish mugs, artisanal tea sets, premium beans, and loose-leaf teas, all
+                    thoughtfully curated to embody the essence of our brand.</p>
+            </div>
+            <div class="col-md-5">
+                <a href="merchandises.html"><img src="img\kit.jpg" class="fload-righ" width="500" height="500">
+                </a>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2 text-center d-flex flex-column align-items-center">
+                <h2 class="featurette-heading">Learn.<span class="text-muted">Coffee is Art.</span></h2>
+                <p class="lead"><p>Discover the captivating world of coffee artistry at Infini Coffee. Join us for an
+                    immersive workshop and unleash your inner barista as we guide you through the secrets of crafting
+                    the perfect cup, from espresso mastery to mesmerizing latte art.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <a href="learn.html"> <img src="img\learn coffee.jpg" class="img-fluid" width="500" height="500">
+                </a>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 text-center d-flex flex-column align-items-center">
+                <h2 class="featurette-heading">Order.<span class="text-muted">Faster! We won't decaffeinate your
+                        beautiful name</span></h2>
+                <p class="lead"><p>Indulge in the extraordinary flavors of Infini Coffee from the comfort of your home
+                    by placing an online order, and let our delightful coffee and tea creations be delivered right to
+                    your doorstep, making every moment a true pleasure.</p>
+            </div>
+            <div class="col-md-5">
+                <a href="order.html"><img src="img\order-online.jpg" class="fload-right" width="500" height="500"></a>
+            </div>
+        </div> <!---End div 2 row-->
+        
+    </div>
+   <!--  End Main Div the container  -->
+    <!-- Footer -->
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="coffee.html">Coffee</a></li>
+                        <li><a href="tea.html">Tea</a></li>
+                        <li><a href="pastries.html">Patisserie</a></li>
+                        <li><a href="order.html">Order</a></li>
+                        <li><a href="subscriptions.html">Subscriptions</a></li>
+                        <li><a href="merchandises.html">Merchandises</a></li>
+                        <li><a href="learn.html">Learn</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i
+                            class="fa fa-youtube text-white"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a role="button" class="btn btn-link text-white" href="Tel:=+1-206-555-1234"><i
+                            class="fa fa-phone"></i> 1-206-555-1234</a><br>
+                    <a role="button" class="btn btn-link text-white" href="mailto:infinicofee.com"><i
+                            class="fa fa-envelope-o"></i> infinicoffee.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Build:JS JS/MAIN.JS -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- End Build -->
+    <script>
+        // Your custom scripts can go here
+    </script>
 </body>
 </html>

@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Infini Coffee</title>
+</head>
+
+<body>
+
+<head> 
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    
+<!-- Buid:CSS CSS/MAIN>CSS---------->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/carousel/">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-----------------End Build------------------------>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <title>Infini Coffee</title>
+    
+</head>
+<body >
+   
+    <header>
+       <img src="img/infini_Logo.jpg" alt="Infini Logo">
+  <!------------------TOP NAVBAR SHRINK TO THE LEFT--------------- -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" >
+
+  <button class="navbar-toggler" 
+  type="button" 
+  data-toggle="collapse" 
+  data-target="#infiniNavbar" 
+  aria-controls="infiniNavbar" 
+  aria-expanded="false"
+  aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="infiniNavbar">
+    <a class="navbar-brand" href="#">
+      <img src="img\images.jpg" width="90" height="90" alt="">
+    </a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+ <li class="nav-item ">
+    <a class="nav-link " href="index.html">Home</a>
+  </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="coffee.html">Coffee</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="tea.html">Tea</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="pastries.html">Patisserie</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="order.html">Order</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="subscriptions.html">Subscriptions</a>
+  </li>
+ <li class="nav-item">
+    <a class="nav-link" href="merchandises.html">Marchandises</a>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle " href="learn.html" id="infiniNavbarDropDown" 
+       data-toggle="dropdown"
+       aria-haspopup="true"
+       aria-expanded="false">Learn</a>
+       <div class="dropdown-menu" aria-labelledby="infiniNavbarDropDown">
+          <a class="dropdown-item" href="learn.html">About US</a>
+          <a class="dropdown-item" href="learn.html">Contact</a>
+          <a class="dropdown-item" href="learn.html">Something else here</a>
+        </div>
+  </li>
+</ul>
+    <!---===============Adding  ======---->
+        <span class="navbar-text ml-auto ">
+            <a id="loginButton" 
+            role="button" >
+            <i class="fa fa-sign-in text-white"></i> Login
+</a>
+
+        
+        </span> 
+  </div>
+</nav>
+<!------------------Here the code of the Modal that will call the Modal. The code can be anywhere in the BODY----------------------->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header " text-white" >
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid ">
+                        <form >
+                            <div class="from-row">
+                                <div class="form-group col-12">
+                                        <label class="sr-only" for="loginEmail"> Email address</label>
+                                        <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                        <label class="sr-only" for="loginPassword">Password</label>
+                                        <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Remember me</label>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="from-row" >
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-dark btn-sm ml-auto" >Sign in</button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-------------------------------------The end of Code Modal ------------------------------------------------>
+  <!-------------------------END-TOP NAVBAR--------------- -->
+
+  <!-- Background image -->
+  <div class="p-5 text-center bg-image" style="
+      background-image: url('img/Abstract-Gold-Lines.jpg');
+      height: 500px; 
+    ">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <br/>
+             <br/>
+          <h1 class="mb-3">INFINI COFFEE</h1>
+          <h4 class="mb-3">One Cup of Coffee at the Time!</h4>
+         <img src="img\infiniLatteLogo.jpg" class="rounded-circle" alt=""  width="200" height="200"> 
+        </div>
+        </div>
+      </div>
+    </div>
+  
+  <!-- Background image -->
+  
+</header>
+
+   <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+   <!--Section: Contact v.2-->
+ <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col">
+                
+                <h2 class="text-center">Contact Us</h2>
+                <h8>Do you have any question? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</h8>
+                <hr />
+            </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4">
+                <h6></i>Our Address:</h6>
+                <address>
+                    Infini Coffee<br/>
+                    Suite 1111 <br/>
+                    Sacramento, CA 98001<br />
+                    U.S.A.
+                </address>
+            </div>
+            <div class="col">
+				<a role="button" class=" btn-link " href="Tel:=+1-206-555-1234"><i class="fa fa-phone"></i > 1-206-555-1234</a><br/>
+            	<a role="button" class="btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> infiniCoffee.com</a>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-12">
+                <h2>Send us your Feedback</h2>
+                <hr />
+            </div>
+            <div class="col-md-10">
+                <!----------------Adding form---------------------------------> 
+            <form>
+              <div class="form-group row">
+                        <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name"/>
+                   </div>
+             </div>
+              <div class="form-group row">
+                        <label for="lastName" class="col-md-2 col-form-label">last Name</label>
+                    <div class="col-md-10">
+                        <input type="text"  class="form-control" id="lastName" placeholder="Last Name"/>
+                   </div>
+            </div>
+              <div class="form-group row">
+                        <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                    <div class="col-5 col-md-3">
+                        <input type="tel" class="form-control" id= "areaCode " placeholder="Area Code " />
+                    </div>
+                    <div class="col-7">
+                        <input type="tel" class="form-control" id="tel" placeholder="Tel. number"/>
+                    </div>
+              </div>
+              <div class="form-group row">
+                        <label for="email" class="col-md-2 col-form-label">Email</label>
+                    <div class="col-md-10">
+                        <input type="email" class="form-control" id="email" placeholder="Email"/>
+                  </div>
+            </div>
+              <div class="form-group row">
+                <div class="col offset-md-2">
+                May we contact you?  
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes"/>
+                    <label for="contactYes" class="form-check-label">Yes</label>
+                    <input type="radio" class="form-check-input" id="contactRadios" name="contactRadios" value="no"/>
+                    <label for="contactNo" class="form-check-label">No</label>
+                    </div>
+                 </div>
+                </div>
+              <div class="form-grow row">
+                    <label for="Feedback" class="col-md-2 cold form-label">Your Feedback</label> 
+                <div class="col-md-10"> 
+                  <textarea class="form-control" id="feedback" name="Feedback" rows="8"></textarea>
+                </div>
+    
+             </div>
+             <div class="form-group row">
+                <div  class="offset-md-2 col-md-10"  >
+                 <button type="submit" class="btn btn-primary">Send Feedback </button>
+                </div>
+             </div>
+
+            </form>
+            </div>
+       </div>
+
+    </div>
+
+<br/>
+
+<!-----------------------------------Footer----------------------------------------------------------------->
+    <footer class="bg-dark" >
+   
+        <div class="container ">
+            <div class="row  ">
+                <div class="col-4 col-sm-2 offset-1 " >
+            <h5>Links</h5>
+            <ul class="list-unstyled ">
+              <li><a href="index.html">Home</a></li>
+               <li><a href="coffee.html">Coffee</a></li>
+                <li><a href="tea.html">Tea</a></li> 
+                <li><a href="pastries.html">Patisserie</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="subscriptions.html">Subscriptions</a></li>
+                <li><a href="merchandises.html">Merchandises</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                
+            </ul>
+        </div>
+        <div class="col-6 col-sm-5 text-center">
+            <h5>Social</h5>
+            <!-------------------- add btn-social-icon-->
+            <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube text-white"></i></a>
+            </div>
+            <div class="col-sm-4 text-center ">
+                <a role="button" class="btn btn-link  " href="Tel:=+1-206-555-1234"><i class="fa fa-phone "></i> 1-206-555-1234</a><br />
+                <a role="button" class="btn btn-link " href="mailto:infinicofee.com"><i class="fa fa-envelope-o "></i> infinicoffee.com </a>
+            </div>
+        </div>
+        
+            </div>
+        </div>
+    </div>
+</div>
+
+    </footer>
+<!-- BUILD:JS  JS/MAIN.JS-->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<!---------------END BUILD------------------>
+<script>
+    
+    
+</script>
+</body>
+
+</html>
